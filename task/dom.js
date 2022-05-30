@@ -10,7 +10,7 @@ window.dom = {
         } else if (name instanceof Object) {
             let Object = name
             for (let key in Object) {
-                node.style[i] = Object[i]
+                node.style[key] = Object[key]
             }
         }
     },
