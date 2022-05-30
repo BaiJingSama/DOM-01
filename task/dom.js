@@ -9,7 +9,7 @@ window.dom = {
             return node.style[name]
         } else if (name instanceof Object) {
             let Object = name
-            for (let i = 0; i < Object.length; i++) {
+            for (let key in Object) {
                 node.style[i] = Object[i]
             }
         }
